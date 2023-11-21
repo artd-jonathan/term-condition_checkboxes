@@ -7,9 +7,14 @@ define(
     ],
     function (ko, $, Component, url) {
         'use strict';
+        console.log(window.checkoutConfig.customData);
         return Component.extend({
             defaults: {
-                template: 'Movistar_Checkout/checkout/customCheckbox'
+                template: 'Movistar_Checkout/checkout/customCheckbox',
+            },
+            getCustomData: function () {
+                var customData = window.checkoutConfig.customData;
+                return customData;
             },
             initObservable: function () {
                 this._super()
@@ -17,6 +22,7 @@ define(
                         CheckVals1: ko.observable(false),
                         CheckVals2: ko.observable(false),
                         CheckVals3: ko.observable(false),
+
                         OpenModal1: ko.observable(false),
                         OpenModal2: ko.observable(false),
                         OpenModal3: ko.observable(false)

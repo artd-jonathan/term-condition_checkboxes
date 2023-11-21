@@ -1,20 +1,22 @@
+
 <div class="checkterm-block">
 	<input id="checkterm1" type="checkbox" name="customCheckbox1" value="1" data-bind='checked: CheckVals1'/>
     <label for="checkterm1"><a href="#" id="modal-button1" data-bind='click: OpenModal1'>Terms 1</a></label>
-    <div id="modal1-content" style="display: none;">
-        <h1>Modal 1</h1>
+    <div id="modal1-content" style="display: none;" data-bind="text: getCustomData()">
+        
     </div>
+    
 </div>
 <div class="checkterm-block">
 	<input id="checkterm2" type="checkbox" name="customCheckbox2" value="2" data-bind='checked: CheckVals2'/>
-    <label for="checkterm1"><a href="#" id="modal-button2" data-bind='click: OpenModal2'>Terms 1</a></label>
+    <label for="checkterm1"><a href="#" id="modal-button2" data-bind='click: OpenModal2'>Terms 2</a></label>
     <div id="modal2-content" style="display: none;">
         <h1>Modal 2</h1>
     </div>
 </div>
 <div class="checkterm-block">
 	<input id="checkterm3" type="checkbox" name="customCheckbox3" value="3" data-bind='checked: CheckVals3'/>
-    <label for="checkterm1"><a href="#" id="modal-button3" data-bind='click: OpenModal3'>Terms 1</a></label>
+    <label for="checkterm1"><a href="#" id="modal-button3" data-bind='click: OpenModal3'>Terms 3</a></label>
     <div id="modal3-content" style="display: none;">
         <h1>Modal 3</h1>
     </div>
